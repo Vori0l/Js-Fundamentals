@@ -35,7 +35,7 @@ console.log(firstName + " " + lastName + " (" + group + ")");
 
 let b = 5;
 let c = undefined;
-console.log( typeof b);
+console.log(typeof b);
 console.log(typeof c);
 
 let login = prompt("Введіть логін");
@@ -44,9 +44,9 @@ let password = prompt("Введіть пароль");
 
 let message = `Dear user your login is ${login} , your email is ${email} , your password is ${password}`;
 
-alert(message); 
+alert(message);
 
-	
+
 const secondsInHour = 60 * 60;
 const secondsInDay = secondsInHour * 24;
 const secondsInMonth = secondsInDay * 30;
