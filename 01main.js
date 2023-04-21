@@ -7,12 +7,12 @@ let y = x;
 let newStr = str;
 alert(y);
 alert(newStr);
-
+let g;
 let myObject = {
 	mysting: "Hello",
 	myNumber: 66,
 	myBoolean: true,
-	myUndefined: undefined,
+	myUndefined: g,
 	myNull: null
 };
 
