@@ -13,23 +13,23 @@ if (a < b && b < c) {
 let x = 1;
 let y = 2;
 
-let res1 = x.toString() + y.toString();// Допишіть код, необхідно використовувати змінні x і y
-console.log(res1); // ""12""
-console.log(typeof res1); // ""string""
+let res1 = x.toString() + y.toString();
+console.log(res1); 
+console.log(typeof res1);
 x = true;
 y = 2;
-let res2 = true && x.toString() + y.toString();// Допишіть код, необхідно використовувати змінні x і y
-console.log(res2); // ""true2""
-console.log(typeof res2); // ""string""
+let res2 = true && x.toString() + y.toString();
+console.log(res2);
+console.log(typeof res2); 
 
-let res3 = x;// Допишіть код, необхідно використовувати змінні x і y
-console.log(res3); // true
-console.log(typeof res3); // ""boolean""
+let res3 = x;
+console.log(res3); 
+console.log(typeof res3); 
 x = "js"
 y = 5;
-let res4 = y / x;// Допишіть код, необхідно використовувати змінні x і y
-console.log(res4); // NaN
-console.log(typeof res4); // ""number""
+let res4 = y / x;
+console.log(res4); 
+console.log(typeof res4); 
 
 //3
 let isAdult = prompt("Скільки вам років?")
