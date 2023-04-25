@@ -66,9 +66,9 @@ let arr = [4, 5, 2, 1, 6, 5, 3, 5, 2, 5]
     }
   }
   console.log(`Новий масив з числом ${moreOfen}`);
-  console.log(`Даний масив: arr`);
+  console.log(`Даний масив: ${arr}`);
 
-
+//5
   function calculateArea(f, g, h) {
 	if (isNaN(f) || isNaN(g) || isNaN(h) || f <= 0 || g <= 0 || h <= 0) {
 	  return 'Incorrect data';
