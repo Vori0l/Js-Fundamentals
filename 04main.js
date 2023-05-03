@@ -59,4 +59,54 @@ try {
 	console.error(error.message);
 }
 //4
+class MonthException {
+	constructor(message) {
+		this.name = 'MonthException';
+		this.message = message;
+	}
+
+}
+function showMonthName(month) {
+	const monthName = ['January', 'February', 'March', 'April', 'May', 'June',
+		'July', 'August', 'September', 'October', 'November', 'December'];
+	if (month > 12 || month < 1) {
+		throw new MonthException('Incorrect month number');
+	}
+	return monthName[month - 1];
+}
+
+try {
+	console.log(showMonthName(5));
+	console.log(showMonthName(14));
+} catch (error) {
+	console.log(`${error.name} ${error.message}`);
+
+}
+//5
+function showUser(id) {
+	if (id < 0) {
+		throw new Error(`ID must not be negative: ${id}`);
+	} if(typeof id !== 'number'){
+		throw new Error(`ID must be number: ${id}`);
+	}
+	const user = { id: id };
+	return user;
+}
+
+function showUsers(ids) {
+	let validIds = [];
+	for (let i = 0; i < ids.length; i++){
+		try {
+			let user = showUser(ids[i]);
+			validIds.push(user);
+		} catch (error) {
+			console.log(error.message);
+		}
+	}
+	return validIds;
+	
+}
+showUsers([7, -12, 44, 22]);
+
+
 
