@@ -105,14 +105,13 @@ class MarkerRefill extends Marker {
 		this.AmountRefill = AmountRefill;
 
 	}
-	refill() 	{
+	refill() {
 		this.ink_level += this.AmountRefill;
 		console.log('Marker has been refilled.');
 	}
 }
 //5
-//     2) додати приватне поле experience і присвоїти йому значення 1.2 і використовувати його як додатковий множник при визначенні зарплати – створити метод showSalaryWithExperience(). Вивести значення зарплати з цим коефіцієнтом. 
-class Worker{
+class Worker {
 	constructor(fullName, dayRate, workingDays) {
 		this.fullName = fullName;
 		this.dayRate = dayRate;
@@ -129,8 +128,46 @@ class Worker{
 		console.log(`Salary  ${SalaryWithExperience} with experience`);
 		return SalaryWithExperience;
 	}
-	get 
+	get showExp() {
+		return this._experience;
+	  }
+	
+	  set setExp(value) {
+		this._experience = value;
+	  }
+
 }
+
+
+
+const worker1 = new Worker("Oleh Olehov", 20, 23);
+console.log(worker1.fullName);
+worker1.showSalary();
+console.log("New experience: " + worker1.showExp);
+worker1.showSalaryWithExperience();
+worker1.setExp = 1.5;
+console.log("New experience: " + worker1.showExp);
+worker1.showSalaryWithExperience();
+
+const worker2 = new Worker('Pavlo Pavlov', 44, 12);
+console.log(worker2.fullName);
+worker2.showSalary();
+console.log("New experience:" + worker2.showExp);
+worker2.showSalaryWithExperience();
+worker2.setExp = 1.5;
+console.log("New experience: " + worker2.showExp);
+worker2.showSalaryWithExperience();
+
+
+const worker3 = new Worker("Ivan Ivanov", 43, 28);
+console.log(worker3.fullName);
+worker3.showSalary();
+console.log("New experience: " + worker3.showExp);
+worker3.showSalaryWithExperience();
+worker3.setExp = 1.5;
+console.log("New experience: " + worker3.showExp);
+worker3.showSalaryWithExperience();
+
 
 
 
