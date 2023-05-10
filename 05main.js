@@ -51,7 +51,7 @@ class Person{
 		 console.log(this.name + ' ' + this.surname);
 	}
 }
-const person = new Person('	Ярослав', '	Любінець');
+const person = new Person('	Василь', 'Петрович');
 person.showFullName();
 
 class Student extends Person{
