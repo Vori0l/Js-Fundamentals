@@ -130,15 +130,13 @@ class Worker {
 	}
 	get showExp() {
 		return this._experience;
-	  }
-	
-	  set setExp(value) {
+	}
+
+	set setExp(value) {
 		this._experience = value;
-	  }
+	}
 
 }
-
-
 
 const worker1 = new Worker("Oleh Olehov", 20, 23);
 console.log(worker1.fullName);
@@ -167,17 +165,3 @@ worker3.showSalaryWithExperience();
 worker3.setExp = 1.5;
 console.log("New experience: " + worker3.showExp);
 worker3.showSalaryWithExperience();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
