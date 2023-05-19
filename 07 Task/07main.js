@@ -1,15 +1,15 @@
-//1
-let myWindow = window.open('', '', 'width=300, height=300');
-setTimeout(function () {
-	myWindow.resizeTo(500, 500);
-}, 2000);
-setTimeout(function () {
-	myWindow.moveTo(200, 200);
-}, 4000);
-setTimeout(function () {
-	myWindow.close();
-}, 6000);
-//2
+///------1------///
+// let myWindow = window.open('', '', 'width=300, height=300');
+// setTimeout(function () {
+// 	myWindow.resizeTo(500, 500);
+// }, 2000);
+// setTimeout(function () {
+// 	myWindow.moveTo(200, 200);
+// }, 4000);
+// setTimeout(function () {
+// 	myWindow.close();
+// }, 6000);
+///------2------///
 document.getElementById(id).style.property = new sty
 function changeCSS() {
 	let change = document.getElementById('text');
@@ -17,7 +17,7 @@ function changeCSS() {
 	change.style.fontSize = '20px';
 	change.style.fontFamily = 'Comic Sans MS'
 }
-//3
+///------3------///
 function changebackgroundblue() {
 	document.body.style.backgroundColor = 'blue'
 }
@@ -42,3 +42,13 @@ link.addEventListener('mouseover', function() {
 link.addEventListener('mouseout', function() {
 	document.body.style.backgroundColor = 'white';
 });
+///------4------///
+function deleteOption() {
+	let selectOption = document.getElementById("Mylist");
+	let selectValue = selectOption.value;
+
+	if (selectValue !== "") {
+		selectOption.remove(selectOption.selectedIndex);
+	}
+};
+
