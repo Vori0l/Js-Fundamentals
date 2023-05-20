@@ -110,7 +110,7 @@ updateScreen();
   function updateSelectedInfo() {
     const selectedCountry = countrySelect.options[countrySelect.selectedIndex].text;
     const selectedCity = citiesSelect.value;
-    selectedInfo.textContent = `Обрана країна: ${selectedCountry}, місто: ${selectedCity}`;
+    selectedInfo.textContent = ` ${selectedCountry},  ${selectedCity}`;
   }
 
   updateSelectedInfo();	
