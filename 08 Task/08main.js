@@ -5,24 +5,25 @@ function FirstUpprecase(str) {
 		console.log("String's starts with uppercase character");
 	else
 		console.log("String's not starts with uppercase character");
-
 }
 FirstUpprecase('abc');
 FirstUpprecase('Abc');
+
 ///------2------///
 function Emailcheck(email) {
 	let regexp = /^[A-Za-z0-9]+([\-\.]{1}[A-Za-z0-9]+)*@[A-Za-z0-9]{2,}\.[A-Za-z0-9]{2,}$/
 
-
 	return regexp.test(email);
 }
 console.log(Emailcheck('Test.email123@gmail.com'));
+
 ///------3------///
 function ChangeString(str) {
 	let regexp = /^([A-Za-z]+)\s+([A-Za-z]+)$/;
 	return str.replace(regexp, "$2 $1");
 }
 console.log(ChangeString("Java Script"));
+
 ///------4------///
 function CardValidator(number) {
 	let regexp = /^[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}$/;
@@ -35,6 +36,7 @@ function CardValidator(number) {
 }
 
 console.log(CardValidator('0682-2345-1123-1127'));
+
 ///------5------///
 function ValidEmail(useremail) {
 	let regexp = /^[A-Za-z0-9]+([._-][A-Za-z0-9]+)*@[A-Za-z0-9]+([.-][A-Za-z0-9]+)*\.[A-Za-z]{2,}$/;
@@ -48,6 +50,7 @@ function ValidEmail(useremail) {
 console.log(ValidEmail('my_mail@gmail.com'));
 console.log(ValidEmail('#my_mail@gmail.com'));
 console.log(ValidEmail('my_ma--il@gmail.com'));
+
 ///------6------///	
 function ValidLogin(login) {
 	let regexp = /^[A-Za-z][A-Za-z0-9.]{1,9}$/;
