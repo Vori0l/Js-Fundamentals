@@ -28,11 +28,6 @@ console.log(name4); // "Bob"
 console.log(age4); // 26
 
 ///------3------///
-
-// 3.
-// Напишіть функцію mul(), яка приймає будь-яку кількість параметрів різного типу і повертає добуток параметрів типу Number.
-// Якщо параметри типу Number відсутні, повертає число 0.
-
 function mul() {
 	let product = 1;
 	let hasNumbers = false
@@ -52,3 +47,29 @@ function mul() {
 console.log(mul(1, "str", 2, 3, true)); // 6
 console.log(mul(null, "str", false, true)); // 0
 
+///------4------///
+function mapBuilder(keysArray, valuesArrays) {
+  const map = new Map();
+  for (let i = 0; i < keysArray.length; i++) {
+    map.set(keysArray[i], valuesArrays[i]);
+    
+  }
+  return map;
+} 
+
+let keys = [1, 2, 3, 4];
+let values = ["div", "span", "b", "i"];
+let map = mapBuilder(keys, values);
+console.log(map.size); // 4
+console.log(map.get(2)); // "span"
+///------5------///
+let arr = [];
+
+for (let i = 0; i <= 2; i++) {
+  arr[i] = function () {
+     console.log(i);
+  };
+}
+
+arr[0](); // 0
+arr[arr.length - 1](); // 2
