@@ -62,7 +62,7 @@ let values = ["div", "span", "b", "i"];
 let map = mapBuilder(keys, values);
 console.log(map.size); // 4
 console.log(map.get(2)); // "span"
-///------5------///
+ ///------5------///
 let arr = [];
 
 for (let i = 0; i <= 2; i++) {
