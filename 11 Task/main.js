@@ -51,7 +51,7 @@ new Promise(function (resolve, reject) {
 }).then(function (result) {
 	console.log("Ви ввели число:", result);
 });
-/------4------///
+///------4------///
 const delay = (i, time) => new Promise(resolve => setTimeout(() => resolve(i), time));
 async function showNumbers() {
 	for (let i = 0; i <= 10; i++) {
