@@ -19,11 +19,3 @@ http.createServer((req, res) => {
 
 
 }).listen(5000);
-
-
-// res.statusCode = 200;
-// const UserInf = {
-// 	username: os.userInfo().username,
-// 	system: os.userInfo().system
-// };
-// const Write = 
