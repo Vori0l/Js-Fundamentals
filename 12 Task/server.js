@@ -1,3 +1,4 @@
+///------1------///
 const http = require('http');
 const os = require('os');
 const path = require('path');
@@ -16,6 +17,5 @@ http.createServer((req, res) => {
 	res.write('<br>')
 	res.write('Server file name:'+ path.basename(__filename))
 	res.end();
-
 
 }).listen(5000);
